@@ -12,6 +12,7 @@
     "emitDecoratorMetadata": true,
     "noEmit": true,
     "skipLibCheck": true,
+    "resolveJsonModule": true,
     "plugins": [
       {
         "name": "typescript-styled-plugin"

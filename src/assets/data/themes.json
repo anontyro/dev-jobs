@@ -1,0 +1,64 @@
+{
+  "data": {
+    "light" : {
+      "id": "T_001",
+      "name": "Light",
+      "colors": {
+        "primary": "#5B65E4",
+        "background": "#F5F6F8",
+        "textPrimary": "#E8E7EA",
+        "textSecondary": "#000000",
+        "button": {
+          "background": "#5B65E4",
+          "text": "#FFFFFF",
+          "border": "#5B65E4"
+        },
+        "buttonSecondary": {
+          "background": "#EDEDF6",
+          "text": "#5B65E4",
+          "border": "#EDEDF6"
+        },
+        "link": {
+          "text":"#000000",
+          "hover": "#000000"
+        },
+        "card": {
+          "background": "#FFFFFF",
+          "text": "#000000",
+          "textMuted": "#E8E7EA",
+          "textSecondary": "#5B65E4"
+        }
+      }
+    },
+    "dark" : {
+      "id": "T_002",
+      "name": "Dark",
+      "colors": {
+        "primary": "#5B65E4",
+        "background": "#121822",
+        "textPrimary": "#E8E7EA",
+        "textSecondary": "#FFFFFF",
+        "button": {
+          "background": "#5B65E4",
+          "text": "#FFFFFF",
+          "border": "#5B65E4"
+        },
+        "buttonSecondary": {
+          "background": "#EDEDF6",
+          "text": "#5B65E4",
+          "border": "#EDEDF6"
+        },
+        "link": {
+          "text":"#FFFFFF",
+          "hover": "#FFFFFF"
+        },
+        "card": {
+          "background": "#18202D",
+          "text": "#FFFFFF",
+          "textMuted": "#E8E7EA",
+          "textSecondary": "#5B65E4"
+        }
+      }
+    }
+  }
+}
