@@ -20,6 +20,14 @@ const createStyles = (theme: CustomTheme) => {
       background: ${theme.colors.background};
       color: ${theme.colors.textSecondary};
     }
+    .card {
+      background: ${theme.colors.card.background};
+      color: ${theme.colors.card.text};
+      min-height: 3rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      padding: 15px;
+    }
   `;
 };
 
