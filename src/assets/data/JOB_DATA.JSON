@@ -1,23 +1,27 @@
 {
   "data": [
     {
-      "companyName" : "Scoot",
-      "locations": ["United Kingdom"],
-      "companySize": "500-1000",
-      "website": "https://www.flyscoot.com",
+      "name" : "Scoot",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Scoot_logo.svg/1280px-Scoot_logo.svg.png",
+      "locations": ["United Kingdom"],
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et bibendum mauris. Donec tortor arcu, convallis non euismod tincidunt, consectetur non mauris. Fusce in neque sit amet justo feugiat vestibulum vel vitae nulla. Sed mauris elit, tempus at magna maximus, laoreet sollicitudin mi. Vivamus ac tortor a nisl blandit fermentum in eget quam. Pellentesque viverra ligula pharetra, tincidunt dui et, volutpat ex. Sed vel vehicula urna. Aliquam non risus imperdiet, vulputate nibh sit amet, pellentesque diam. Sed pellentesque ipsum ac mi lacinia lobortis.\nEtiam et diam vehicula, aliquam odio eu, ullamcorper nibh. Integer lorem ligula, vestibulum suscipit ultrices et, rutrum sed neque. Proin blandit, odio interdum interdum venenatis, libero odio rhoncus eros, ut maximus lorem tellus vel dolor. Suspendisse et hendrerit leo, non blandit tortor. Maecenas suscipit finibus libero, non fermentum tortor fermentum eget. Suspendisse quis lacus volutpat, scelerisque augue et, faucibus risus. Donec in mollis augue, mattis posuere ipsum. Nulla non gravida augue. Morbi et lobortis augue. Proin sapien dui, ultricies et tincidunt eu, euismod sed libero. Morbi ac dictum neque, eu dictum arcu. Aliquam sed volutpat risus, ac pellentesque nisi. Sed cursus pellentesque lectus sit amet congue. Vivamus ullamcorper imperdiet bibendum. Proin magna tortor, vestibulum eget dui id, varius dictum libero. Pellentesque at feugiat ipsum.",
+      "url": "https://www.flyscoot.com",
+      "companySize": "500-1000",
+      "type": "Private",
+      "industry": "Aviation",
       "jobs" : [
         {
           "title": "Senior Software Engineer",
-          "jobType": "Full Time",
+          "type": "Full Time",
           "locations": ["United Kingdom"],
           "dateTimeAdded": "1630116426229",
+          "startDate": "",
+          "salary": "£50,000 - £60,000",
           "details": {
             "description": "lorem ",
             "requirements": {
               "description": "Curabitur quam velit, dignissim quis mi at, ultrices tincidunt odio. Cras pharetra finibus fermentum. Donec et nisl diam. Nam at posuere nisl. Sed fermentum ligula purus, at gravida arcu sagittis nec. Proin nec varius nulla, sed fermentum quam. Nullam dictum ornare lorem vel placerat.\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed varius elit ut nibh faucibus, ut euismod lacus dictum. Vivamus dignissim ligula sit amet justo elementum, fringilla sollicitudin nisl interdum. Pellentesque ornare urna eget eros eleifend efficitur ac id purus. Suspendisse quis mi ut ante placerat varius vel eget massa. Ut tincidunt risus vitae varius vestibulum. Mauris vehicula, elit fringilla volutpat congue, lectus neque sollicitudin purus, ut eleifend dui sem in ipsum. Mauris tincidunt mi sed varius vehicula. Nulla finibus maximus varius. Vivamus faucibus, sapien et hendrerit tempus, lectus leo tristique arcu, ac convallis sem arcu nec sapien. Praesent id elit malesuada, vestibulum urna id, aliquam lacus. Cras feugiat ultricies nulla, vel bibendum metus porta a. Proin eu purus a lectus facilisis maximus quis et nibh. Duis luctus sit amet odio quis elementum. Nam sit amet metus sed erat tempus commodo.",
-              "skills": [
+              "info": [
                 "Experience with Java, JavaScript, HTML, CSS, and SQL",
                 "Experience with Android and iOS development",
                 "Experience with Git",
@@ -30,14 +34,13 @@
             },
             "responsibilities": {
               "description": "Curabitur non est ut dolor consectetur vehicula. Praesent sit amet convallis quam, vitae ultricies lectus. Praesent vitae efficitur eros, eu fringilla erat. Nam tincidunt lacus ut nulla vehicula, a dapibus justo dignissim. Vestibulum vulputate ipsum at arcu vulputate pulvinar. Curabitur gravida felis sapien, ut pretium mauris ullamcorper et. Phasellus ullamcorper laoreet tempus.",
-              "tasks": [
+              "info": [
                 "Develop and maintain the Scoot API",
                 "Develop and maintain the Scoot mobile app",
                 "Develop and maintain the Scoot website",
                 "Develop and maintain the Scoot iOS and Android apps"
               ]
             },
-            "salary": "£50,000 - £60,000",
             "contact": {
               "name": "",
               "email": "",
