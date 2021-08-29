@@ -4,6 +4,7 @@ interface GeneralInfo {
 }
 
 interface JobData {
+  id: string;
   title: string;
   type: string;
   locations: string[];
