@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import useTheme from "../theme/useTheme";
 import GlobalStyles from "../theme/GlobalStyles";
 import CustomTheme from "../theme/Theme";
+import { Helmet } from "react-helmet";
 
 interface HeaderProps {
   theme: CustomTheme;
@@ -43,6 +44,9 @@ const MainLayout: React.FC<Props> = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <title>{data.site.siteMetadata.title}</title>
+      </Helmet>
       {themeLoaded && (
         <>
           <GlobalStyles theme={selectedTheme} />

@@ -4,18 +4,18 @@
       "id": "T_001",
       "name": "Light",
       "colors": {
-        "primary": "#5B65E4",
+        "primary": "#765be4",
         "background": "#F5F6F8",
-        "textPrimary": "#E8E7EA",
+        "textPrimary": "#c6c5c9",
         "textSecondary": "#000000",
         "button": {
-          "background": "#5B65E4",
+          "background": "#765be4",
           "text": "#FFFFFF",
-          "border": "#5B65E4"
+          "border": "#765be4"
         },
         "buttonSecondary": {
           "background": "#EDEDF6",
-          "text": "#5B65E4",
+          "text": "#765be4",
           "border": "#EDEDF6"
         },
         "link": {
@@ -25,8 +25,8 @@
         "card": {
           "background": "#FFFFFF",
           "text": "#000000",
-          "textMuted": "#E8E7EA",
-          "textSecondary": "#5B65E4"
+          "textMuted": "#c6c5c9",
+          "textSecondary": "#765be4"
         }
       }
     },
@@ -34,18 +34,18 @@
       "id": "T_002",
       "name": "Dark",
       "colors": {
-        "primary": "#5B65E4",
+        "primary": "#765be4",
         "background": "#121822",
-        "textPrimary": "#E8E7EA",
+        "textPrimary": "#c6c5c9",
         "textSecondary": "#FFFFFF",
         "button": {
-          "background": "#5B65E4",
+          "background": "#765be4",
           "text": "#FFFFFF",
-          "border": "#5B65E4"
+          "border": "#765be4"
         },
         "buttonSecondary": {
           "background": "#EDEDF6",
-          "text": "#5B65E4",
+          "text": "#765be4",
           "border": "#EDEDF6"
         },
         "link": {
@@ -55,8 +55,8 @@
         "card": {
           "background": "#18202D",
           "text": "#FFFFFF",
-          "textMuted": "#E8E7EA",
-          "textSecondary": "#5B65E4"
+          "textMuted": "#c6c5c9",
+          "textSecondary": "#765be4"
         }
       }
     }

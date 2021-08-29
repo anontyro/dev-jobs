@@ -8,6 +8,7 @@ interface Props {
 
 const createStyles = (theme: CustomTheme) => {
   return css`
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap");
     html,
     body {
       height: 100%;
@@ -15,6 +16,7 @@ const createStyles = (theme: CustomTheme) => {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
     }
     body {
       background: ${theme.colors.background};
@@ -24,9 +26,27 @@ const createStyles = (theme: CustomTheme) => {
       background: ${theme.colors.card.background};
       color: ${theme.colors.card.text};
       min-height: 3rem;
-      margin-bottom: 2rem;
       border-radius: 10px;
       padding: 15px;
+    }
+    .card-text-muted {
+      color: ${theme.colors.card.textMuted};
+    }
+    .card-footer {
+      color: ${theme.colors.card.textSecondary};
+      font-weight: 600;
+    }
+    ul.card-header-content {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    ul.card-header-content > li {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    li + li:before {
+      content: " • ";
     }
   `;
 };
