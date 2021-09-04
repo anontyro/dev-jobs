@@ -40,6 +40,16 @@ const createStyles = (theme: CustomTheme) => {
       color: ${theme.colors.card.textSecondary};
       font-weight: 600;
     }
+    .button.default {
+    }
+    .button.light {
+      background-color: ${theme.colors.buttonSecondary.background};
+      color: ${theme.colors.buttonSecondary.text};
+      border: 1px solid ${theme.colors.buttonSecondary.border};
+      border-radius: 5px;
+      font-size: 1rem;
+      padding: 0.7rem 1rem;
+    }
     ul.card-header-content {
       list-style: none;
       padding: 0;

@@ -15,8 +15,8 @@
         },
         "buttonSecondary": {
           "background": "#EDEDF6",
-          "text": "#765be4",
-          "border": "#EDEDF6"
+          "text": "#5129f3",
+          "border": "#cdcdf1"
         },
         "link": {
           "text":"#000000",

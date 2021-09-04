@@ -115,7 +115,7 @@ const JobList: React.FC<JobListProps> = ({ companyList }) => {
                 <div className="card-logo"></div>
                 <span>{company.name}</span>
               </JobCardLogo>
-              <JobCardHeader className="card-text-muted  card-header">
+              <JobCardHeader className="card-text-muted card-header">
                 <ul className="card-header-content">
                   <li>{dateToNow(job.dateTimeAdded)}</li>
                   <li>{job.type}</li>
