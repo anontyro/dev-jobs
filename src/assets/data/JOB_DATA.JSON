@@ -1,5 +1,4 @@
-{
-  "data": [
+[
     {
       "name" : "Scoot",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Scoot_logo.svg/1280px-Scoot_logo.svg.png",
@@ -215,4 +214,3 @@
       ]
     }
   ]
-}

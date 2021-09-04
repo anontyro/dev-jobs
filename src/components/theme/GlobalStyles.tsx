@@ -22,6 +22,10 @@ const createStyles = (theme: CustomTheme) => {
       background: ${theme.colors.background};
       color: ${theme.colors.textSecondary};
     }
+    a {
+      text-decoration: none;
+      color: ${theme.colors.textSecondary};
+    }
     .card {
       background: ${theme.colors.card.background};
       color: ${theme.colors.card.text};

@@ -4,6 +4,8 @@ import MainLayout from "../components/_layout";
 import { getJobList } from "../utils/getJsonData";
 import CompanyData from "../interfaces/companyData";
 import { formatDistanceToNow } from "date-fns";
+import { Link } from "gatsby";
+import { createPageUri } from "../utils/pageUri";
 
 // SEARCH SECTION ---------------------
 
@@ -40,6 +42,9 @@ const JobCard = styled.div`
   display: flex;
   flex-direction: column;
   padding: 30px 15px 15px 15px;
+  &:hover {
+    box-shadow: 0px 3px 4px 0px #c8c8c8;
+  }
 `;
 
 interface JobCardLogoProps {
@@ -101,28 +106,30 @@ const JobList: React.FC<JobListProps> = ({ companyList }) => {
     <JobListContainer>
       {companyList.map((company, ci) =>
         company.jobs.map((job, ji) => (
-          <JobCard className="card list-container" key={job.id}>
-            <JobCardLogo
-              url={company.logo}
-              backgroundColor={company.backgroundColor}
-            >
-              <div className="card-logo"></div>
-              <span>{company.name}</span>
-            </JobCardLogo>
-            <JobCardHeader className="card-text-muted  card-header">
-              <ul className="card-header-content">
-                <li>{dateToNow(job.dateTimeAdded)}</li>
-                <li>{job.type}</li>
-              </ul>
-            </JobCardHeader>
-            <JobCardBody>
-              <h3>{job.title}</h3>
-              <p className="card-text-muted ">{company.name}</p>
-            </JobCardBody>
-            <JobCardFooter className="card-footer">
-              <span>{job.locations[0]}</span>
-            </JobCardFooter>
-          </JobCard>
+          <Link to={createPageUri(job.id, company.name)} key={job.id}>
+            <JobCard className="card list-container">
+              <JobCardLogo
+                url={company.logo}
+                backgroundColor={company.backgroundColor}
+              >
+                <div className="card-logo"></div>
+                <span>{company.name}</span>
+              </JobCardLogo>
+              <JobCardHeader className="card-text-muted  card-header">
+                <ul className="card-header-content">
+                  <li>{dateToNow(job.dateTimeAdded)}</li>
+                  <li>{job.type}</li>
+                </ul>
+              </JobCardHeader>
+              <JobCardBody>
+                <h3>{job.title}</h3>
+                <p className="card-text-muted ">{company.name}</p>
+              </JobCardBody>
+              <JobCardFooter className="card-footer">
+                <span>{job.locations[0]}</span>
+              </JobCardFooter>
+            </JobCard>
+          </Link>
         ))
       )}
     </JobListContainer>
@@ -137,7 +144,7 @@ const IndexContainer = styled.div`
 `;
 
 const IndexPage = () => {
-  const [jobList, setJobList] = useState(getJobList().data);
+  const [jobList, setJobList] = useState(getJobList());
   return (
     <MainLayout>
       <IndexContainer>

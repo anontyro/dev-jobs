@@ -9,7 +9,7 @@ export const getThemes = (): CustomThemeData => {
   return data;
 };
 
-export const getJobList = (): Results<CompanyData[]> => {
-  const data = jobList as Results<CompanyData[]>;
+export const getJobList = (): CompanyData[] => {
+  const data = jobList as CompanyData[];
   return data;
 };
