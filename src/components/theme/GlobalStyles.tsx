@@ -38,6 +38,11 @@ const createStyles = (theme: CustomTheme) => {
       padding: 15px;
       &.job {
         padding: 2rem;
+        @media (max-width: 768px) {
+        }
+        @media (max-width: 425px) {
+          padding: 1rem;
+        }
       }
     }
     .card-text-muted {
@@ -67,8 +72,15 @@ const createStyles = (theme: CustomTheme) => {
     }
     .footer {
       background: ${theme.colors.card.background};
-      margin-top: 5rem;
+      margin-top: 3rem;
+      position: sticky;
+      bottom: 0;
       &.job {
+      }
+      @media (max-width: 768px) {
+      }
+      @media (max-width: 425px) {
+        margin-top: 1rem;
       }
     }
     ul.card-header-content {

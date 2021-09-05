@@ -5,6 +5,12 @@ import MainLayout from "../components/_layout";
 import JobQueryData from "../interfaces/jobQueryData";
 import formatDistanceToNow from "date-fns/formatDistanceToNow";
 
+/*
+@media (max-width: 768px) {
+}
+@media (max-width: 425px) {
+}
+*/
 interface JobPageProps {
   job: JobQueryData;
 }
@@ -43,6 +49,30 @@ const JobPageHeaderContainer = styled.div`
   }
   .company-detail-buttons {
   }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 425px) {
+    height: 10rem;
+    flex-direction: column;
+    margin-top: -0.5rem;
+    position: relative;
+    margin-bottom: 1rem;
+    .company-name {
+      position: absolute;
+      top: -2.5rem;
+      width: 4rem;
+      left: 42%;
+      height: 4rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .company-detail {
+      padding: 2rem;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 `;
 
 // todo extract this seperate file as used here and index
@@ -54,6 +84,11 @@ const JobCardBody = styled.div`
   p {
     margin: 0;
     margin-top: 5px;
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 425px) {
+    height: auto;
   }
 `;
 
@@ -94,7 +129,9 @@ const JobCardHeader = styled.div`
       font-weight: bold;
     }
   }
-  .job-card-header-button {
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 425px) {
   }
 `;
 
@@ -107,6 +144,12 @@ const JobCardFooter = styled.div`
 const JobPageContainer = styled.div`
   width: 60%;
   margin: auto;
+  @media (max-width: 768px) {
+    width: 75%;
+  }
+  @media (max-width: 425px) {
+    width: 95%;
+  }
 `;
 
 const JobContentContainer = styled.div`
@@ -136,9 +179,6 @@ const JobBody: React.FC<JobPageProps> = ({ job }) => (
         <JobCardFooter className="card-footer">
           <span>{job.locations[0]}</span>
         </JobCardFooter>
-      </div>
-      <div className="flex-center-items job-card-header-button">
-        <button className="button default">Apply Now</button>
       </div>
     </JobCardHeader>
 
@@ -188,6 +228,23 @@ const JobFooterContainer = styled.div`
     }
   }
   .job-footer-button {
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 425px) {
+    height: 4rem;
+    .job-footer-container {
+      width: 95%;
+    }
+    .job-footer-body {
+      display: none;
+    }
+    .job-footer-button {
+      width: 100%;
+      button {
+        width: 100%;
+      }
+    }
   }
 `;
 
