@@ -65,6 +65,12 @@ const createStyles = (theme: CustomTheme) => {
         border: 1px solid ${theme.colors.buttonSecondary.border};
       }
     }
+    .footer {
+      background: ${theme.colors.card.background};
+      margin-top: 5rem;
+      &.job {
+      }
+    }
     ul.card-header-content {
       list-style: none;
       padding: 0;

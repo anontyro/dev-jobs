@@ -143,6 +143,7 @@ const JobBody: React.FC<JobPageProps> = ({ job }) => (
     </JobCardHeader>
 
     <div className="job-content-details">
+      <p>{job.company.description}</p>
       <h3 className="bold">Requirements</h3>
       <p>{job.details.requirements.description}</p>
       <ul>
@@ -165,9 +166,44 @@ const JobBody: React.FC<JobPageProps> = ({ job }) => (
 
 // JOBFOOTER ------
 
-const JobFooterContainer = styled.div``;
+const JobFooterContainer = styled.div`
+  display: flex;
+  height: 5rem;
+  .job-footer-container {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .job-footer-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: left;
+    h3 {
+      margin: 0;
+    }
+    p {
+      margin: 0.3rem 0;
+    }
+  }
+  .job-footer-button {
+  }
+`;
 
-const JobFooter = () => <JobFooterContainer></JobFooterContainer>;
+const JobFooter: React.FC<JobPageProps> = ({ job }) => (
+  <JobFooterContainer className="footer job">
+    <div className="job-footer-container">
+      <div className="job-footer-body">
+        <h3 className="bold">{job.title}</h3>
+        <p className="card-text-muted">{job.company.name}</p>
+      </div>
+      <div className="flex-center-items job-footer-button">
+        <button className="button default">Apply Now</button>
+      </div>
+    </div>
+  </JobFooterContainer>
+);
 
 interface Props {
   data: any;
@@ -181,6 +217,7 @@ const JobItem: React.FC<Props> = ({ data }) => {
         <JobHeader job={job} />
         <JobBody job={job} />
       </JobPageContainer>
+      <JobFooter job={job} />
     </MainLayout>
   );
 };
