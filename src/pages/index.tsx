@@ -80,6 +80,7 @@ const JobCardHeader = styled.div`
   font-size: 0.9rem;
   font-family: "Noto Sans JP", sans-serif;
 `;
+
 const JobCardBody = styled.div`
   height: 5rem;
   h3 {
@@ -113,7 +114,7 @@ const JobList: React.FC<JobListProps> = ({ companyList }) => {
                 backgroundColor={company.backgroundColor}
               >
                 <div className="card-logo"></div>
-                <span>{company.name}</span>
+                <span className="bold">{company.name}</span>
               </JobCardLogo>
               <JobCardHeader className="card-text-muted card-header">
                 <ul className="card-header-content">
