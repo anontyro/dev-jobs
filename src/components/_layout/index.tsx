@@ -16,11 +16,29 @@ const Header = styled.div`
   height: 10rem;
   border-bottom-left-radius: 5rem;
   background-color: ${(props: HeaderProps) => props.theme.colors.primary};
+  display: flex;
+  align-items: center;
+  .header-content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      margin: 0;
+      color: white;
+    }
+  }
   @media (max-width: 768px) {
   }
   @media (max-width: 425px) {
-    height: 7rem;
+    height: 6rem;
     border-bottom-left-radius: 0;
+    .header-content {
+      width: 95%;
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
   }
 `;
 
@@ -56,7 +74,12 @@ const MainLayout: React.FC<Props> = ({ children }) => {
       {themeLoaded && (
         <>
           <GlobalStyles theme={selectedTheme} />
-          <Header theme={selectedTheme}></Header>
+          <Header theme={selectedTheme}>
+            <div className="header-content">
+              <h1>devjobs</h1>
+              <span>toggle</span>
+            </div>
+          </Header>
           <MainContainer>{children}</MainContainer>
         </>
       )}

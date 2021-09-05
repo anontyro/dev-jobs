@@ -16,6 +16,7 @@ const SearchBarContainer = styled.div`
     margin-bottom: 3rem;
   }
   @media (max-width: 425px) {
+    margin-top: -1rem;
   }
 `;
 
