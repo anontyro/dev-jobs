@@ -12,6 +12,11 @@ import { createPageUri } from "../utils/pageUri";
 const SearchBarContainer = styled.div`
   margin-top: -2.5rem;
   margin-bottom: 5rem;
+  @media (max-width: 768px) {
+    margin-bottom: 3rem;
+  }
+  @media (max-width: 425px) {
+  }
 `;
 
 interface SearachBarProps {
@@ -35,6 +40,15 @@ const JobListContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4rem 1rem;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem 1rem;
+  }
+
+  @media (max-width: 425px) {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem 1rem;
+  }
 `;
 
 const JobCard = styled.div`
@@ -70,8 +84,6 @@ const JobCardLogo = styled.div`
   }
   div.card-logo {
     background-image: url(${(props: JobCardLogoProps) => props.url});
-    /* width: 75%;
-    height: 70%; */
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -142,6 +154,11 @@ const JobList: React.FC<JobListProps> = ({ companyList }) => {
 const IndexContainer = styled.div`
   width: 75%;
   margin: auto;
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 425px) {
+    width: 90%;
+  }
 `;
 
 const IndexPage = () => {

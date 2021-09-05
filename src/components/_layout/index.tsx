@@ -16,6 +16,12 @@ const Header = styled.div`
   height: 10rem;
   border-bottom-left-radius: 5rem;
   background-color: ${(props: HeaderProps) => props.theme.colors.primary};
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 425px) {
+    height: 7rem;
+    border-bottom-left-radius: 0;
+  }
 `;
 
 interface Props {
