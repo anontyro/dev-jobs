@@ -6,6 +6,10 @@ import useTheme from "../theme/useTheme";
 import GlobalStyles from "../theme/GlobalStyles";
 import CustomTheme from "../theme/Theme";
 import { Helmet } from "react-helmet";
+import Toggle from "react-toggle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { CURRENT_THEME_KEY, getLocalStorage } from "../../utils/localStorage";
 
 interface HeaderProps {
   theme: CustomTheme;
@@ -49,12 +53,19 @@ interface Props {
 const MainContainer = styled.div``;
 
 const MainLayout: React.FC<Props> = ({ children }) => {
-  const { theme, themeLoaded } = useTheme();
+  const { theme, themes, themeLoaded, setMode } = useTheme();
 
   const [selectedTheme, setSelectedTheme] = useState<CustomTheme>(theme);
   useEffect(() => {
     setSelectedTheme(theme);
   }, [themeLoaded]);
+
+  const setToggleTheme = () => {
+    const currentTheme = getLocalStorage<CustomTheme>(CURRENT_THEME_KEY);
+    const nextTheme = currentTheme.name === "Dark" ? themes.light : themes.dark;
+    setMode(nextTheme);
+    setSelectedTheme(nextTheme);
+  };
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -77,7 +88,18 @@ const MainLayout: React.FC<Props> = ({ children }) => {
           <Header theme={selectedTheme}>
             <div className="header-content">
               <h1>devjobs</h1>
-              <span>toggle</span>
+              <label>
+                <FontAwesomeIcon icon={faMoon} />
+                <Toggle
+                  defaultChecked={theme?.name === "Light"}
+                  icons={false}
+                  className="theme-toggle"
+                  onChange={() => {
+                    setToggleTheme();
+                  }}
+                />
+                <FontAwesomeIcon icon={faSun} />
+              </label>
             </div>
           </Header>
           <MainContainer>{children}</MainContainer>

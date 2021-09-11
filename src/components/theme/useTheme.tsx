@@ -20,7 +20,7 @@ const useTheme = () => {
   };
 
   useEffect(() => {
-    const localTheme = getLocalStorage(CURRENT_THEME_KEY);
+    const localTheme = getLocalStorage<CustomTheme>(CURRENT_THEME_KEY);
     localTheme ? setTheme(localTheme) : setTheme(themes.light);
 
     setThemeLoaded(true);
@@ -28,6 +28,7 @@ const useTheme = () => {
 
   return {
     theme,
+    themes,
     setTheme,
     themeLoaded,
     setMode,
