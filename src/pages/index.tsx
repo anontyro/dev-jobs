@@ -6,17 +6,73 @@ import CompanyData from "../interfaces/companyData";
 import { formatDistanceToNow } from "date-fns";
 import { Link } from "gatsby";
 import { createPageUri } from "../utils/pageUri";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faMapMarker } from "@fortawesome/free-solid-svg-icons";
 // SEARCH SECTION ---------------------
 
 const SearchBarContainer = styled.div`
   margin-top: -2.5rem;
   margin-bottom: 5rem;
+  .card-content.search {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    .search-query {
+      width: 100%;
+    }
+    .search-location {
+      width: 100%;
+    }
+    .search-controls {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      label {
+        display: flex;
+        align-items: center;
+      }
+      button {
+        .search-icon {
+          display: none;
+        }
+      }
+    }
+  }
   @media (max-width: 768px) {
     margin-bottom: 3rem;
+    .card-content.search {
+      .search-query {
+      }
+      .search-location {
+        display: none;
+      }
+    }
   }
   @media (max-width: 425px) {
     margin-top: -1rem;
+    .card-content.search {
+      .search-query {
+        .search-icon {
+          display: none;
+        }
+      }
+      .search-controls {
+        label {
+          display: none;
+        }
+        button {
+          min-width: 1rem;
+          span.search-text {
+            display: none;
+          }
+          .search-icon {
+            display: inline-block;
+            margin: auto;
+          }
+        }
+      }
+    }
   }
 `;
 
@@ -27,7 +83,36 @@ interface SearachBarProps {
 
 const SearchBar: React.FC<SearachBarProps> = ({ jobList, setJobList }) => {
   return (
-    <SearchBarContainer className="card">Top container</SearchBarContainer>
+    <SearchBarContainer className="card">
+      <div className="card-content search">
+        <div className="search-query">
+          <FontAwesomeIcon className="search-icon" icon={faSearch} />
+          <input
+            className="input-full"
+            type="text"
+            placeholder="Filter by title..."
+          />
+        </div>
+        <div className="search-location">
+          <FontAwesomeIcon className="search-icon" icon={faMapMarker} />
+          <input
+            className="input-full"
+            type="text"
+            placeholder="Filter by location..."
+          />
+        </div>
+        <div className="search-controls">
+          <label htmlFor="">
+            <span>Full Time Only</span>
+            <input type="checkbox" name="full-time-only" id="full-time" />
+          </label>
+          <button className="button default">
+            <span className="search-text">Search</span>
+            <FontAwesomeIcon className="search-icon" icon={faSearch} />
+          </button>
+        </div>
+      </div>
+    </SearchBarContainer>
   );
 };
 

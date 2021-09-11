@@ -42,6 +42,22 @@ const createStyles = (theme: CustomTheme) => {
       }
     }
 
+    .search-icon {
+      font-size: 1.4rem;
+      margin-right: 0.5rem;
+    }
+
+    .input-full {
+      background-color: unset;
+      border: unset;
+      font-size: 1.2rem;
+      color: ${theme.colors.textSecondary};
+    }
+    .input-full:focus-visible {
+      outline: none;
+      border-bottom: 1px solid ${theme.colors.button.border};
+    }
+
     .card {
       background: ${theme.colors.card.background};
       color: ${theme.colors.card.text};
