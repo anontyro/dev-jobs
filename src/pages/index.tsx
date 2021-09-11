@@ -76,12 +76,42 @@ const SearchBarContainer = styled.div`
   }
 `;
 
+const initalJobQuery = {
+  title: "",
+  location: "",
+  isFullTime: false,
+};
+
 interface SearachBarProps {
   jobList: CompanyData[];
   setJobList: (val: CompanyData[]) => void;
 }
 
 const SearchBar: React.FC<SearachBarProps> = ({ jobList, setJobList }) => {
+  const [jobQuery, setJobQuery] = useState({ ...initalJobQuery });
+
+  const searchJobs = () => {
+    const results = getJobList().map((company: CompanyData) => {
+      const jobs = company.jobs.filter((j) => {
+        return jobQuery.title !== ""
+          ? j.title.toLowerCase().includes(jobQuery.title.toLowerCase())
+          : true && jobQuery.location !== ""
+          ? j.locations
+              .map((x) => x.toLowerCase())
+              .includes(jobQuery.location.toLowerCase())
+          : true && jobQuery.isFullTime
+          ? (j.type = "Full Time")
+          : true;
+      });
+      return {
+        ...company,
+        jobs,
+      };
+    });
+    const filteredResults = results.filter((x) => x.jobs.length > 0);
+    setJobList(filteredResults);
+  };
+
   return (
     <SearchBarContainer className="card">
       <div className="card-content search">
@@ -91,6 +121,10 @@ const SearchBar: React.FC<SearachBarProps> = ({ jobList, setJobList }) => {
             className="input-full"
             type="text"
             placeholder="Filter by title..."
+            value={jobQuery.title}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setJobQuery({ ...jobQuery, title: e.target.value })
+            }
           />
         </div>
         <div className="search-location">
@@ -99,14 +133,26 @@ const SearchBar: React.FC<SearachBarProps> = ({ jobList, setJobList }) => {
             className="input-full"
             type="text"
             placeholder="Filter by location..."
+            value={jobQuery.location}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setJobQuery({ ...jobQuery, location: e.target.value })
+            }
           />
         </div>
         <div className="search-controls">
           <label htmlFor="">
             <span>Full Time Only</span>
-            <input type="checkbox" name="full-time-only" id="full-time" />
+            <input
+              type="checkbox"
+              name="full-time-only"
+              id="full-time"
+              checked={jobQuery.isFullTime}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+                setJobQuery({ ...jobQuery, isFullTime: e.target.checked })
+              }
+            />
           </label>
-          <button className="button default">
+          <button className="button default" onClick={searchJobs}>
             <span className="search-text">Search</span>
             <FontAwesomeIcon className="search-icon" icon={faSearch} />
           </button>
