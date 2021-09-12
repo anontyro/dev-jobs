@@ -17,7 +17,7 @@ export const filterCompanyList = (
               .map((x) => x.toLowerCase())
               .includes(search.location.toLowerCase())
           : true;
-      const isFullTimeOrAny = search.isFullTime ? (j.type = "Full Time") : true;
+      const isFullTimeOrAny = search.isFullTime ? j.type === "Full Time" : true;
       return (
         hasTitleOrIgnoreEmpty && hasLocationOrIgnoreEmpty && isFullTimeOrAny
       );
