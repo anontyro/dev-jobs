@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobFooter renders correctly 1`] = `
+Array [
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-yve4ho{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:5rem;}.css-yve4ho .job-footer-container{width:60%;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-yve4ho .job-footer-body{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;text-align:left;}.css-yve4ho .job-footer-body h3{margin:0;}.css-yve4ho .job-footer-body p{margin:0.3rem 0;}@media (max-width: 425px){.css-yve4ho{height:4rem;}.css-yve4ho .job-footer-container{width:95%;}.css-yve4ho .job-footer-body{display:none;}.css-yve4ho .job-footer-button{width:100%;}.css-yve4ho .job-footer-button button{width:100%;}}",
+      }
+    }
+    data-emotion="css yve4ho"
+  />,
+  <div
+    className="footer job css-yve4ho"
+  >
+    <div
+      className="job-footer-container"
+    >
+      <div
+        className="job-footer-body"
+      >
+        <h3
+          className="bold"
+        >
+          test job
+        </h3>
+        <p
+          className="card-text-muted"
+        >
+          the company
+        </p>
+      </div>
+      <div
+        className="flex-center-items job-footer-button"
+      >
+        <button
+          className="button default"
+        >
+          Apply Now
+        </button>
+      </div>
+    </div>
+  </div>,
+]
+`;

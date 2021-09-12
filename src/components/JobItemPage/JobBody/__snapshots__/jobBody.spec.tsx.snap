@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobBody renders correctly 1`] = `
+Array [
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-1rs61dd .job-content-details li+li:before{content:none;}",
+      }
+    }
+    data-emotion="css 1rs61dd"
+  />,
+  <div
+    className="card job css-1rs61dd"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": ".css-rgejlf{font-size:0.9rem;font-family:\\"Noto Sans JP\\",sans-serif;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-rgejlf .job-card-header-body{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;}.css-rgejlf .job-card-header-body h3{font-size:1.5rem;margin:0;font-weight:bold;}",
+        }
+      }
+      data-emotion="css rgejlf"
+    />
+    <div
+      className="card-header css-rgejlf"
+    >
+      <div
+        className="job-card-header-body"
+      >
+        <ul
+          className="card-text-muted card-header-content"
+        >
+          <li>
+            15 days ago
+          </li>
+          <li>
+            Full Time
+          </li>
+        </ul>
+        <h3>
+          Software Engineer
+        </h3>
+        <style
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": ".css-1inan0i{font-size:0.8rem;font-family:\\"Noto Sans JP\\",sans-serif;}",
+            }
+          }
+          data-emotion="css 1inan0i"
+        />
+        <div
+          className="card-footer css-1inan0i"
+        >
+          <span>
+            London
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="job-content-details"
+    >
+      <p>
+        We are a small team of software engineers
+      </p>
+      <h3
+        className="bold"
+      >
+        Requirements
+      </h3>
+      <p>
+        We are looking for a software engineer
+      </p>
+      <ul>
+        <li>
+          Something here
+        </li>
+      </ul>
+    </div>
+    <div
+      className="job-content-details"
+    >
+      <h3
+        className="bold"
+      >
+        What You Will Do
+      </h3>
+      <p>
+        You will be doing this
+      </p>
+      <ul>
+        <li>
+          Creating awesome new apps
+        </li>
+        <li>
+          Using awesome new languages
+        </li>
+      </ul>
+    </div>
+  </div>,
+]
+`;

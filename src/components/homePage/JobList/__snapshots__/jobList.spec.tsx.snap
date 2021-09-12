@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobList renders correctly 1`] = `
+Array [
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-1vg6rj8{display:grid;grid-template-columns:1fr 1fr 1fr;grid-gap:4rem 1rem;}@media (max-width: 768px){.css-1vg6rj8{grid-template-columns:1fr 1fr;grid-gap:3rem 1rem;}}@media (max-width: 425px){.css-1vg6rj8{grid-template-columns:1fr;grid-gap:3rem 1rem;}}",
+      }
+    }
+    data-emotion="css 1vg6rj8"
+  />,
+  <div
+    className="css-1vg6rj8"
+  >
+    <a
+      href="/jobs/first-company/1"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-6h39gr{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;padding:30px 15px 15px 15px;}.css-6h39gr:hover{box-shadow:0px 3px 4px 0px #c8c8c8;}",
+          }
+        }
+        data-emotion="css 6h39gr"
+      />
+      <div
+        className="card list-container css-6h39gr"
+      >
+        <style
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": ".css-1wkpplo{height:50px;width:50px;border-radius:15px;position:absolute;top:-2rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;box-shadow:1px 1px 4px black;}.css-1wkpplo span{color:white;font-size:0.7rem;text-transform:uppercase;}.css-1wkpplo div.card-logo{background-image:url();-webkit-background-size:contain;background-size:contain;background-repeat:no-repeat;}",
+            }
+          }
+          data-emotion="css 1wkpplo"
+        />
+        <div
+          className="css-1wkpplo"
+        >
+          <div
+            className="card-logo"
+          />
+          <span
+            className="bold"
+          >
+            first company
+          </span>
+        </div>
+        <style
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": ".css-1o03a17{font-size:0.9rem;font-family:\\"Noto Sans JP\\",sans-serif;}",
+            }
+          }
+          data-emotion="css 1o03a17"
+        />
+        <div
+          className="card-text-muted card-header css-1o03a17"
+        >
+          <ul
+            className="card-header-content"
+          >
+            <li>
+              15 days ago
+            </li>
+            <li>
+              Full Time
+            </li>
+          </ul>
+        </div>
+        <style
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": ".css-dix78b{height:5rem;}.css-dix78b h3{margin:0;}.css-dix78b p{margin:0;margin-top:5px;}",
+            }
+          }
+          data-emotion="css dix78b"
+        />
+        <div
+          className="css-dix78b"
+        >
+          <h3>
+            Software Engineer
+          </h3>
+          <p
+            className="card-text-muted "
+          >
+            first company
+          </p>
+        </div>
+        <style
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": ".css-1inan0i{font-size:0.8rem;font-family:\\"Noto Sans JP\\",sans-serif;}",
+            }
+          }
+          data-emotion="css 1inan0i"
+        />
+        <div
+          className="card-footer css-1inan0i"
+        >
+          <span>
+            London
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      href="/jobs/first-company/2"
+    >
+      <div
+        className="card list-container css-6h39gr"
+      >
+        <div
+          className="css-1wkpplo"
+        >
+          <div
+            className="card-logo"
+          />
+          <span
+            className="bold"
+          >
+            first company
+          </span>
+        </div>
+        <div
+          className="card-text-muted card-header css-1o03a17"
+        >
+          <ul
+            className="card-header-content"
+          >
+            <li>
+              15 days ago
+            </li>
+            <li>
+              Full Time
+            </li>
+          </ul>
+        </div>
+        <div
+          className="css-dix78b"
+        >
+          <h3>
+            Product Designer
+          </h3>
+          <p
+            className="card-text-muted "
+          >
+            first company
+          </p>
+        </div>
+        <div
+          className="card-footer css-1inan0i"
+        >
+          <span>
+            United State
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      href="/jobs/another-company/3"
+    >
+      <div
+        className="card list-container css-6h39gr"
+      >
+        <div
+          className="css-1wkpplo"
+        >
+          <div
+            className="card-logo"
+          />
+          <span
+            className="bold"
+          >
+            another company
+          </span>
+        </div>
+        <div
+          className="card-text-muted card-header css-1o03a17"
+        >
+          <ul
+            className="card-header-content"
+          >
+            <li>
+              15 days ago
+            </li>
+            <li>
+              Full Time
+            </li>
+          </ul>
+        </div>
+        <div
+          className="css-dix78b"
+        >
+          <h3>
+            Engineering Manager
+          </h3>
+          <p
+            className="card-text-muted "
+          >
+            another company
+          </p>
+        </div>
+        <div
+          className="card-footer css-1inan0i"
+        >
+          <span>
+            London
+          </span>
+        </div>
+      </div>
+    </a>
+    <a
+      href="/jobs/totally-different-inc/4"
+    >
+      <div
+        className="card list-container css-6h39gr"
+      >
+        <div
+          className="css-1wkpplo"
+        >
+          <div
+            className="card-logo"
+          />
+          <span
+            className="bold"
+          >
+            totally different inc
+          </span>
+        </div>
+        <div
+          className="card-text-muted card-header css-1o03a17"
+        >
+          <ul
+            className="card-header-content"
+          >
+            <li>
+              15 days ago
+            </li>
+            <li>
+              Full Time
+            </li>
+          </ul>
+        </div>
+        <div
+          className="css-dix78b"
+        >
+          <h3>
+            Senior Software Engineer
+          </h3>
+          <p
+            className="card-text-muted "
+          >
+            totally different inc
+          </p>
+        </div>
+        <div
+          className="card-footer css-1inan0i"
+        >
+          <span>
+            London
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>,
+]
+`;
