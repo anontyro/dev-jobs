@@ -1,54 +1,46 @@
+<h1 align="center">
+  Devjobs: A Static Job Board
+</h1>
+
+## Commands
+
+To get up and running is easy
+
+```shell
+#start development server for Gatsby
+yarn develop
+```
+
+```shell
+#start jest and run tests, can use test:watch to keep watching for changes
+yarn test
+```
+
+## Overview
+
+![main screen dark](src/assets/images/screenshots/home-desktop-dark.png)
+This is a test gatsby static site that was inspired by [this site idea](https://www.frontendmentor.io/challenges/devjobs-web-app-HuvC_LP4l) and I just went and built it out a bit differently. All the data is stored in the `JOB_DATA.JSON` file and can be replaced or modified as required. The theming is enabled to switch between light and dark
+
+![main screen light](src/assets/images/screenshots/home-desktop-light.png)
+
+The site is also fully mobile friendly
+
+![main screen dark mobile](src/assets/images/screenshots/home-mobile-dark.png)
+
+and container a detail page for the breakdown of the job information
+
+![job screen dark](src/assets/images/screenshots/job-mobile-dark.png)
+
+This was more a CSS exercise but it did also test some interesting use cases in Gatsby as well which is one technology I have not used a lot but am rather enjoying for the specific use cases.
+
+## Testing
+
+Tests have been written in Jest and there is snapshot tests for the components and unit tests for the logic
+
+## Technologies
+
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
-
-## 🚀 Quick start
-
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
