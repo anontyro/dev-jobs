@@ -1,6 +1,6 @@
 import React, { ReactNode, useState } from "react";
 import styled from "@emotion/styled";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import { useEffect } from "react";
 import useTheme from "../theme/useTheme";
 import GlobalStyles from "../theme/GlobalStyles";
@@ -87,7 +87,9 @@ const MainLayout: React.FC<Props> = ({ children }) => {
           <GlobalStyles theme={selectedTheme} />
           <Header theme={selectedTheme}>
             <div className="header-content">
-              <h1>devjobs</h1>
+              <Link to="/">
+                <h1>devjobs</h1>
+              </Link>
               <label>
                 <FontAwesomeIcon icon={faMoon} />
                 <Toggle
